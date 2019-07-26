@@ -28,10 +28,7 @@
 				ddddddddddddddddddddddddddddddd
 				ddddddddddddddddddddddddddddddd
 				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
+				
 			</div>
 		</div>
 		<div id="bottom">
