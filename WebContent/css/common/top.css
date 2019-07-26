@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@font-face { font-family: 'Eoe_Zno_R'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Eoe_Zno_B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_B.woff') format('woff'); font-weight: normal; font-style: normal; }
+*{
+    box-sizing: border-box;
+    font-family: "Eoe_Zno_R";
+}
+button, input{
+    background: none;
+    border: none;
+    outline: none;
+}
+button:hover, a:hover{
+    color: grey;
+}
+/* div, nav, li{border: 1px solid black;} */
+.top-wrap{
+    width: 100%;
+    height: 150px;
+}
+
+/* nav-1------------------------------------------------------------------ */
+#nav-1{
+    height: 60%;
+}
+.logobox{width: 10%; height: 100%;float: left; position: relative;}
+.logobox img{
+    height: 100%; 
+    position: absolute; 
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.searchbox{
+    width: 80%; 
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.searchbox>form{
+    width: 40%;
+    height: 50px;
+    /* background: grey; */
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#searchInput{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+#searchBtn{
+    position: absolute;
+    top:0;
+    right: 20px;
+    height: 100%;
+    outline: none;
+}
+.aside{
+    width: 10%; 
+    height: 100%; 
+    float: left;
+    position: relative;
+}
+.aside-content{
+    width: 170px;
+    height: 30px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.aside-content>button{
+    width: 50%; 
+    /* background-color: aquamarine;  */
+    float: left;
+    height: 100%;
+    outline: none;
+}
+
+/* nav-2------------------------------------------------------------------ */
+#nav-2{
+    height: 40%; 
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    padding: 0;
+}
+#nav-2>div{width: 100%; height: 100%;}
+#nav-2>div>ul{width: 100%; height: 100%;}
+#nav-2>div>ul>li{
+    /* background-color: blueviolet;  */
+    /* border: 1px solid black;  */
+    width: 18%; 
+    height: 100%;
+    text-align: center
+}
+#navbarDropdownMenuLink{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Eoe_Zno_B";
+    color: black;
+}
+#navbarDropdownMenuLink:hover{color: #f1645d;}
+#navbarDropdownMenuLink:focus{color: #f1645d;}
+.dropdown-menu{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.dropdown-item:hover{
+    background: none;
+    color: white;
+}
