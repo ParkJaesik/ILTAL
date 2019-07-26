@@ -15,19 +15,7 @@
 		</div>
 		<div id="content">
 			<div id="content-wrap">
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddd
+				
 				
 			</div>
 		</div>
