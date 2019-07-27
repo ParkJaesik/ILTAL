@@ -5,28 +5,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script text ="text/javascript" src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 <style>
 	#teacherPageWrap{
-		border:1px solid black;
+		/* border:1px solid black; */
 		width: 100%;
 		height: 1000px;
 	}
 	#teacherPageHeader{
-		border:1px solid black;
+		/* border:1px solid black; */
 		width: 100%;
 		height: 20%;
 		
 
 	}
 	#teacherPageNav{
-		border:1px solid black;
+		/* border:1px solid black; */
 		width: 100%;
 		height: 10%;
 		
 	}
 	#teacherPageContent{
-		border:1px solid black;
+		/* border:1px solid black; */
 		width:100%;
 		height: 70%;
 	}
@@ -47,6 +47,58 @@
 		display:inline-block;
 		float:left;
 	}
+	div{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+
+        #header1{
+            display:inline-block;
+            float: left;
+            width:25%;
+            height: 100%;
+            
+        }
+        #header2{
+            display:inline-block;
+            width:25%;
+            height: 100%;
+            float: left;
+            margin-top: 50px;
+            
+        }
+        #header3{
+            display:inline-block;
+            width:50%;
+            height: 100%;
+            float: left;
+            margin-top: 50px;
+        }
+        #header1>img{
+
+            
+            width:55%;
+            height: 55%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30px; 
+
+        }
+        #header2>p{
+            margin-left:0;
+        }
+        #header3>div{
+            width: 25%;
+            height: 30%;
+            display: inline-block;
+            float:left;
+            text-align: center;
+            
+        }
+        .header3{
+            border-right: 1px solid black;
+        }
 	
 
 	* { margin:0; padding:0; }
@@ -70,10 +122,23 @@
 			<div id="content-wrap">
 				<div id="teacherPageWrap">
 					<div id="teacherPageHeader">
-						<div id="header1"><img src="<%=request.getContextPath() %>/images/teacher/deathstar.png" id="teacherProfileImage"></div>
-						<div id="header2">안녕하세요! <br>김하나님! <br>ohmyfood_@naver.com</div>
-						<div id="header3"></div>
-					</div>
+			            <div id="header1">
+			                <img src="../testetsets/image/avatar.png" alt="">
+			            </div>
+			            <div id="header2"><p>안녕하세요! <br>
+			                                	김하나님<br>
+			                                ohmyfood_@naver.com</p></div>
+			            <div id="header3">
+			                <div class="header3">학원등급<br>
+			                   					 강사</div>
+			                <div class="header3">수강<br>
+			                    				2</div>
+			                <div class="header3">내수업<br>
+			                    				2</div>
+			                <div>취미보관함<br>
+			                    10</div>
+			            </div>
+			        	</div>
 					<div id="teacherPageNav">
 					</div>
 					<div id="teacherPageContent">
