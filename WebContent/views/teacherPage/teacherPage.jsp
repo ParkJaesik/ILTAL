@@ -31,8 +31,8 @@
 		height: 70%;
 	}
 	#teacherProfileImage{
-		width: 100%;
-		height: 100%;
+		width: 50%;
+		height: 50%;
 	}
 	#header1{
 		width:30%;
@@ -48,64 +48,16 @@
 		float:left;
 	}
 	
-	
-	ul.tabs {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-    height: 32px;
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
-    width: 100%;
-    font-family:"dotum";
-    font-size:12px;
-	}
-	ul.tabs li {
-	    float: left;
-	    text-align:center;
-	    cursor: pointer;
-	    width:82px;
-	    height: 31px;
-	    line-height: 31px;
-	    border: 1px solid #eee;
-	    border-left: none;
-	    font-weight: bold;
-	    background: #fafafa;
-	    overflow: hidden;
-	    position: relative;
-	}
-	ul.tabs li.active {
-	    background: #FFFFFF;
-	    border-bottom: 1px solid #FFFFFF;
-	}
-	.tab_container {
-	    border: 1px solid #eee;
-	    border-top: none;
-	    clear: both;
-	    float: left;
-	    width: 248px;
-	    background: #FFFFFF;
-	}
-	.tab_content {
-	    padding: 5px;
-	    font-size: 12px;
-	    display: none;
-	}
-	.tab_container .tab_content ul {
-	    width:100%;
-	    margin:0px;
-	    padding:0px;
-	}
-	.tab_container .tab_content ul li {
-	    padding:5px;
-	    list-style:none
-	}
-	;
-	 #container {
-	    width: 249px;
-	    margin: 0 auto;
-	}
+
+	* { margin:0; padding:0; }
+	ul,li { list-style:none; }
+	a { text-decoration:none; color:#000; }
+	.tab { border:1px solid #ddd; border-left:none; background:#fff; overflow:hidden; }
+	.tab li { float:left; width:25%; border-left:1px solid #ddd; text-align:center; box-sizing:border-box; }
+	.tab li { display:inline-block; padding:20px; cursor:pointer; }
+	.tab li.on { background-color:#eee; color:#f00; }
+	.tab_con { clear:both;}
+	.tab_con div { display:none; height:100px; background:#fff; line-height:100px; text-align:center; }
 
 </style>
 </head>
@@ -118,40 +70,26 @@
 			<div id="content-wrap">
 				<div id="teacherPageWrap">
 					<div id="teacherPageHeader">
-						<div id="header1"><img src="/WebContent/images/teacher/deathstar.png" id="teacherProfileImage"></div>
+						<div id="header1"><img src="<%=request.getContextPath() %>/images/teacher/deathstar.png" id="teacherProfileImage"></div>
 						<div id="header2">안녕하세요! <br>김하나님! <br>ohmyfood_@naver.com</div>
 						<div id="header3"></div>
 					</div>
 					<div id="teacherPageNav">
 					</div>
 					<div id="teacherPageContent">
-					<ul class="tabs">
-							<li class="active" rel="tab1">강사 정보관리</li>
-							<li rel="tab2">내강의실</li>
-							<li rel="tab3">결제내역</li>
-						</ul>
-						<div class="tab_container">
-							<div id="tab1" class="tab_content">
-								<ul>
-									<li><a href="#">이것은 두 번째 탭의</a>
-									</li>
-									<li><a href="#">이것은 두 번째 탭의</a>
-									</li>
-									<li><a href="#">이것은 두 번째 탭의</a>
-									</li>
-									<li><a href="#">이것은 두 번째 탭의</a>
-									</li>
-									<li><a href="#">이것은 두 번째 탭의</a>
-									</li>
+							<ul class="tab" id="tab">
+									<li>A</li>
+									<li>B</li>
+									<li>C</li>
+									<li>D</li>	
 								</ul>
-							</div>
-							<!-- #tab1 -->
-							<div id="tab2" class="tab_content">2222Mortal Kombat returns after a lengthy hiatus and puts players back into the Tournament for 2D fighting with gruesome combat.</div>
-							<!-- #tab2 -->
-							<div id="tab3" class="tab_content">3333Halo: Reach is the culmination of the superlative combat, sensational multiplayer, and seamless online integration that are the hallmarks of this superb series.</div>
-							<!-- #tab3 -->
-						</div>
-
+								
+								<div class="tab_con" id="tab_con">
+									<div>1st Contents</div>	
+									<div>2nd Contents</div>
+									<div>3rd Contents</div>
+									<div>4rd Contents</div>
+								</div>
 					</div>
 				</div>
 			</div>
@@ -161,20 +99,33 @@
 		</div>
 	</div>
 	<script>
-	$(function () {
-
-		$(".tab_content").hide();
-		$(".tab_content:first").show();
-	
-		$("ul.tabs li").click(function () {
-			$("ul.tabs li").removeClass("active").css("color", "#333");
-			//$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
-			$(this).addClass("active").css("color", "darkred");
-			$(".tab_content").hide()
-			var activeTab = $(this).attr("rel");
-			$("#" + activeTab).fadeIn()
-		});
+	$(function () {	
+		tab('#tab',0);	
 	});
+
+	function tab(e, num){
+		var num = num || 0;
+		var menu = $(e).children();
+		var con = $(e+'_con').children();
+		var select = $(menu).eq(num);
+		var i = num;
+
+		select.addClass('on');
+		con.eq(num).show();
+
+		menu.click(function(){
+			if(select!==null){
+				select.removeClass("on");
+				con.eq(i).hide();
+			}
+
+			select = $(this);	
+			i = $(this).index();
+
+			select.addClass('on');
+			con.eq(i).show();
+		});
+	}
 	</script>
 </body>
 </html>
