@@ -11,7 +11,7 @@
 	<!-- 모든 페이지 이형식으로 -->
 	<div id="wrap">
 		<div id="header">
-			<%@ include file = "views/common/top.jsp" %>
+			<%@ include file = "/views/common/top.jsp" %>
 		</div>
 		<div id="content">
 			<div id="content-wrap">
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		<div id="bottom">
-			<%@ include file = "views/common/bottom.jsp" %>
+			<%@ include file = "/views/common/bottom.jsp" %>
 		</div>
 	</div>	
 </body>
