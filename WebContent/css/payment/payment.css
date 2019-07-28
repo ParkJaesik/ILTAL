@@ -1,1 +1,175 @@
 @charset "UTF-8";
+
+/* 확인용 */
+/* div, ul{
+    border: 1px solid black;
+} */
+
+/* 페이지이름--------------------------------------- */
+.payment-content{
+    margin-bottom: 50px;
+}
+.payment-content>h2{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+/* 강의정보--------------------------------------- */
+.payment-content1{
+    height: 250px;
+    overflow: hidden;
+}
+/* 강의정보-강의사진 */
+.pc1-img{
+    float: left;
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+/* 강의대표사진 */
+.pc1-img>img{
+    width: 90%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 강의정보-강의상세박스 */
+.pc1-detail{
+    float: left;
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+.pc1-detail-wrap{
+    width: 90%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#lectureName{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pc1-detail-lectureInfo{
+    width: 100%;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* 강의정보-결제주의박스 */
+.pc1-notice{
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.pc1-notice-wrap{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.pc1-notice-wrap>ul{
+    font-size: 12px;
+    padding: 0;
+}
+.pc1-notice-wrap>a{
+    color: #f1645d;
+    text-decoration: underline
+}
+
+/* 강사에게 전하는 말--------------------------------------- */
+.payment-content2{
+    height: 200px;
+    padding: 50px;
+}
+.payment-content2>p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.payment-content2>textarea{
+    resize: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+/* paymentCompletedPage.jsp */
+.payment-content2>input{
+	width: 629px;
+	height: 66px;
+	border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* 결제정보--------------------------------------- */
+.payment-content3{
+    height: 500px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 50px 70px;
+}
+.payment-content3>table{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.payment-content3>table tr{font-size: 18px}
+.payment-content3>table th:first-child{width: 50%}
+.payment-content3>table tr:first-child{font-size: 20px}
+.payment-content3>table th>span:last-child{color: #f1645d;}
+.payment-content3>table th>button{
+    border: 1px solid grey;
+    color: grey;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none; 
+}.payment-content3>table th>button:hover{
+    border: 1px solid white;
+    color:white;
+}
+.payment-content3>table td{ font-size: 14px;}
+
+/* 결제버튼--------------------------------------- */
+.payment-content4{
+    height: 100px;
+    position: relative;
+}
+.pc4-wrap{
+    width: 25%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.pc4-wrap>input{
+    float: left;
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+}.pc4-wrap>input:first-child{margin: 0 6%;}
+.pc4-wrap>input:hover{
+    background-color: black;
+    color: white;
+}
