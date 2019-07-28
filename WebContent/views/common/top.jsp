@@ -28,16 +28,16 @@
                     </a>
                 </div>
                 <div class="searchbox">
-                    <form action="" method="POST">
-                        <input type="search" name="search" id="searchInput">
+                    <form name="searchForm" action="" method="POST">
+                        <input type="search" name="searchInput" id="searchInput">
                         <button id="searchBtn"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
                 <div class="aside">
                     <div class="aside-content">
-                        <button type="button">강사 등록</button>
+                        <button type="button" id="teacherRegist">강사 등록</button>
                         <!-- 로그인이 안됐으면 -->
-                        <!-- <button type="button">로그인</button> -->
+                        <!-- <button type="button" id="login-menu">로그인</button> -->
                         <!-- 로그인이 됐으면 -->
                         <button type="button" id="login-menu" onclick="loginMenu();">로그인</button>
                         <div class="login-menu-content" id="login-content">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <nav id="nav-2" class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav id="nav-2" class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">

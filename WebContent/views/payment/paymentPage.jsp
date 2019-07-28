@@ -16,13 +16,13 @@
 		</div>
 		<div id="content">
 			<div id="content-wrap">
-				<form action="#" method="post">
+				<form action="#" method="post" name="paymentForm">
 					<div class="payment-content">
 						<h2>강의신청</h2>
 					</div>
 					<div class="payment-content1">
 						<div class="pc1-img">
-							<img src="<%=request.getContextPath() %>/images/payment/baking1.jpg" alt="강의사진">
+							<img src="<%=request.getContextPath() %>/images/payment/baking1.jpg" alt="강의사진" name="lectureImage">
 						</div>
 						<div class="pc1-detail">
 							<div class="pc1-detail-wrap">
@@ -101,7 +101,7 @@
 							<tr>
 								<th>결제수단 선택</th>
 								<th>
-									<button type="button">신용카드/체크카드</button>
+									<button type="button" id="paymentMethod">신용카드/체크카드</button>
 								</th>
 							</tr>
 							<tr>

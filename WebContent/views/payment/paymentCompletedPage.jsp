@@ -21,7 +21,7 @@
 				</div>
 				<div class="payment-content1">
 					<div class="pc1-img">
-						<img src="<%=request.getContextPath() %>/images/payment/baking1.jpg" alt="강의사진">
+						<img src="<%=request.getContextPath() %>/images/payment/baking1.jpg" alt="강의사진" name="lectureImage">
 					</div>
 					<div class="pc1-detail">
 						<div class="pc1-detail-wrap">
@@ -100,7 +100,7 @@
 						<tr>
 							<th>결제수단 선택</th>
 							<th>
-								<span>신용카드/체크카드</span>
+								<span id="paymentMethod">신용카드/체크카드</span>
 							</th>
 						</tr>
 						<tr>
